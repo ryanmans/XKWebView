@@ -30,10 +30,13 @@
             self.diskPath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
         }
         
+        NSLog(@"diskPath : %@",_diskPath);
+        
         self.responseDictionary = [NSMutableDictionary dictionary];
     }
     return self;
 }
+
 - (NSFileManager*)fileManager
 {
     if (!_fileManager) {
@@ -43,7 +46,6 @@
 }
 
 #pragma mark --
-
 - (void)removeAllCachedResponses
 {
     [super removeAllCachedResponses];
@@ -87,11 +89,11 @@
 }
 #pragma mark - private method-
 
+//文件名
 - (NSString *)cacheFolder
 {
-    return @"PSURLCACHE";
+    return @"PSUrlCache";
 }
-
 
 - (NSString *)cacheFilePath:(NSString *)file
 {
