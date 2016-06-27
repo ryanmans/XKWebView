@@ -19,6 +19,7 @@
 
 - (id)initWithMemoryCapacity:(NSUInteger)memoryCapacity diskCapacity:(NSUInteger)diskCapacity diskPath:(NSString *)path cacheTime:(NSInteger)cacheTime
 {
+    //默认情况下，内存是4M，4* 1024 * 1024；Disk为20M，20 * 1024 ＊ 1024
     if (self = [super initWithMemoryCapacity:memoryCapacity diskCapacity:diskCapacity diskPath:path])
     {
         self.cacheTime = cacheTime;
