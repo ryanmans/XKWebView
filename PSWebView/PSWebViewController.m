@@ -32,8 +32,8 @@
     
     [self.view addSubview:self.webView];
     
-    //加载网页
-    [self.webView loadRequest:@"http://www.apple.com/cn/mac/"];
+    //加载网页 @"http://www.apple.com/cn/mac/"
+    [self.webView loadRequest:@"http://item.jd.com/1304924.html"];
     
 }
 - (void)didReceiveMemoryWarning
