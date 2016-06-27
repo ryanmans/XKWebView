@@ -192,6 +192,7 @@
         
         __weak typeof(self) ws = self;
         
+        //网络数据加载
         [NSURLConnection sendAsynchronousRequest:request queue:[[NSOperationQueue alloc] init] completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
             
             if (response && data)
