@@ -1,0 +1,21 @@
+//
+//  PrefixHeader.pch
+//  PSWebView
+//
+//  Created by Ryan_Man on 16/6/27.
+//  Copyright © 2016年 Ryan_Man. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "Reachability.h"
+#import "MBProgressHUD.h"
+
+#import "NSString+PS.h"
+
+#define IsSafeString(x)          ((x != nil && x.length != 0)? x : @"")
+#define RGB(r,g,b)             [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:1]
+
+
+#endif /* PrefixHeader_pch */
